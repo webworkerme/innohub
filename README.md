@@ -1,8 +1,8 @@
-## Innohub Rest API
+# Innohub Rest API
 
-### Authorization
+## Authorization
 
-#### Usage
+### Usage
 
 By default middleware tries to find the token from `Authorization` header. You can authorize each requests by setting
 your `Authorization` header value.
@@ -14,11 +14,11 @@ your `Authorization` header value.
 
 > Noteworthy: `[{token: value}]` is a `long string`
 
-### Routes
+## Routes
 
-#### Authentication
+### Authentication
 
-##### New Member (Create Account)
+#### New Member (Create Account)
 
 `POST Request`
 
@@ -74,7 +74,7 @@ Invalid Payload
 }
 ```
 
-##### Sign In
+#### Sign In
 
 `PUT Request`
 
@@ -131,7 +131,7 @@ Invalid Payload
 }
 ```
 
-##### Account Recovery
+#### Account Recovery
 
 `PUT Request`
 
@@ -162,6 +162,53 @@ Invalid Credentials
 {
     "status": "error",
     "message": "Recovery error, Invalid credentials",
+    "code": "401"
+}
+```
+
+Invalid Payload
+
+```
+{
+    "status": "error",
+    "message": "Bad Request",
+    "code": "401"
+}
+```
+
+##### Update Recovery Password
+
+`PUT Request`
+
+```
+Endpoint   /api/v1/auth/recovery/update
+```
+
+```
+Payload
+{
+	"code": "Recovery code sent to your mail",
+	"email": "some@emailaddress.com",
+	"password": "some new strong password"
+}
+```
+
+Success Response
+
+```
+{
+    "status": "success",
+    "message": "Password Updated",
+    "code": "200"
+}
+```
+
+Invalid Credentials
+
+```
+{
+    "status": "error",
+    "message": "Invalid Reset Code",
     "code": "401"
 }
 ```
