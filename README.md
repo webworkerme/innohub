@@ -282,3 +282,31 @@ Endpoint   /api/v1/converters
 `{ 
 	url: 1003 + '/profile/'
 }`
+
+### Integrations
+#### Check Status
+`GET Request`
+
+```
+Endpoint   /api/v1/integrations/status/[{userid}]
+```
+
+> Noteworthy: `[{id}]` accepts `integer` eg: 1003
+
+Response
+
+```
+{
+    "status": "success",
+    "response": [
+        {
+            "id": "1",
+            "user": "1",
+            "facebook": "Not Available",
+            "linkedin": "Not Available",
+            "twitter": "Not Available",
+            "updated": "2019-04-04 02:45:49.000000"
+        }
+    ],
+    "code": "200"
+}
