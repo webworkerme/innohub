@@ -9,7 +9,9 @@ your `Authorization` header value.
 
 `authorization` header = `Bearer (token value)`
 > Noteworthy: `[{token: value}]` is created after creating a new account
+
 > Noteworthy: `[{token: value}]` can be used as a session to retrieve user details
+
 > Noteworthy: `[{token: value}]` is a `long string`
 
 ### Routes
@@ -115,6 +117,51 @@ Invalid Credentials
 {
     "status": "error",
     "message": "Sign in error, Invalid credentials",
+    "code": "401"
+}
+```
+
+Invalid Payload
+
+```
+{
+    "status": "error",
+    "message": "Bad Request",
+    "code": "401"
+}
+```
+
+##### Account Recovery
+
+`PUT Request`
+
+```
+Endpoint   /api/v1/auth/recovery
+```
+
+```
+Payload
+{
+	"email": "some@emailaddress.com"
+}
+```
+
+Success Response
+
+```
+{
+    "status": "success",
+    "message": "Password Updated",
+    "code": "200"
+}
+```
+
+Invalid Credentials
+
+```
+{
+    "status": "error",
+    "message": "Recovery error, Invalid credentials",
     "code": "401"
 }
 ```
