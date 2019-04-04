@@ -7,6 +7,7 @@
 **[File Preprocesser](#file-preprocesser)**<br>
 **[Uploads](#uploads)**<br>
 **[Integrations](#integrations)**<br>
+**[Jobs](#jobs)**<br>
 
 
 
@@ -320,3 +321,61 @@ Response
     ],
     "code": "200"
 }
+```
+
+### Jobs
+
+#### New Company (Create Account)
+
+`POST Request`
+
+```
+Endpoint   /api/v1/jobs/create/company
+```
+
+```
+Payload
+{
+	"title": "Menzvic Limited",
+	"user": "1001",
+	"location": "Prescott Arizona"
+}
+```
+
+Success Response
+
+```
+{
+    "status": "success",
+    "response": {
+        "title": "Menzvic Limited",
+        "user": "1",
+        "location": "Prescott Arizona",
+        "id": "1",
+        "logo": "default",
+        "updated": "2019-04-04 13:38:42",
+        "created": "2019-04-04 13:38:42"
+    },
+    "code": "200"
+}
+```
+
+Company Exists
+
+```
+{
+    "status": "error",
+    "message": "Corporate profile exists",
+    "code": "401"
+}
+```
+
+Invalid Payload
+
+```
+{
+    "status": "error",
+    "message": "Bad Request",
+    "code": "401"
+}
+```
