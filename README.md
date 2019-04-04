@@ -249,7 +249,7 @@ Endpoint   /api/v1/preprocessor/file[/{id}/{type}/{data}]
 ```
 Endpoint   /api/v1/uploads
 ```
-> Important Note: append object to payload eg: `{ url: id + '/profile/', name: 'index'}`
+> Important Note: append object to payload: `{ url: id + '/profile/', name: 'index'}`
 
 > user id `id`: `integer`
 
@@ -262,4 +262,23 @@ Endpoint   /api/v1/uploads
 	url: 1003 + '/profile/', 
 	name: 'index'
 }`
+
+
+#### Uploads Alternative
+> Hint: convert images to base64 to store in database
+
+`POST Request`
+
 ```
+Endpoint   /api/v1/converters
+```
+> Important Note: append object to payload: `{ url: id + '/profile/' }`
+
+> user id `id`: `integer`
+
+> type `profile`: `string`
+
+> example object 
+`{ 
+	url: 1003 + '/profile/'
+}`
