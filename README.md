@@ -294,7 +294,7 @@ Endpoint   /api/v1/converters
 }`
 
 ### Integrations
-#### Check Status
+#### Get Status
 `GET Request`
 
 ```
