@@ -24,8 +24,8 @@ Endpoint   /api/v1/auth/create
 ```
 Payload
 {
-	"email": "wrilben@icloud.com",
-	"name": "Benedict Asamoah",
+	"email": "some&emailaddress.com",
+	"name": "John Kensel",
 	"password": "somestrongpassword"
 }
 ```
