@@ -336,7 +336,7 @@ Endpoint   /api/v1/jobs/create/company
 ```
 Payload
 {
-	"title": "Menzvic Limited",
+	"name": "Menzvic Limited",
 	"user": "1001",
 	"location": "Prescott Arizona"
 }
@@ -348,7 +348,7 @@ Success Response
 {
     "status": "success",
     "response": {
-        "title": "Menzvic Limited",
+        "name": "Menzvic Limited",
         "user": "1001",
         "location": "Prescott Arizona",
         "id": "1000",
