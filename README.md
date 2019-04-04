@@ -151,7 +151,7 @@ Success Response
 ```
 {
     "status": "success",
-    "message": "Password Updated",
+    "message": "Recovery mail sent",
     "code": "200"
 }
 ```
