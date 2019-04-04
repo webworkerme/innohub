@@ -222,3 +222,18 @@ Invalid Payload
     "code": "401"
 }
 ```
+
+
+#### File Preprocesser
+> Hint: used to retrieve files from server
+
+`GET Request`
+
+```
+Endpoint   /api/v1/preprocessor/file[/{id}/{type}/{data}]
+```
+> user id `id`: `integer`
+> request type `type`: `string` eg profile
+> name of file `data`: `string`
+> example url `/api/v1/preprocessor/file/1/profile/a.png`
+```
