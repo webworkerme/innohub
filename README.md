@@ -233,7 +233,10 @@ Invalid Payload
 Endpoint   /api/v1/preprocessor/file[/{id}/{type}/{data}]
 ```
 > user id `id`: `integer`
+
 > request type `type`: `string` eg profile
+
 > name of file `data`: `string`
+
 > example url `/api/v1/preprocessor/file/1/profile/a.png`
 ```
