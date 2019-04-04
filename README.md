@@ -239,4 +239,27 @@ Endpoint   /api/v1/preprocessor/file[/{id}/{type}/{data}]
 > name of file `data`: `string`
 
 > example url `/api/v1/preprocessor/file/1/profile/a.png`
+
+
+#### Uploads
+> Hint: upload files to server
+
+`POST Request`
+
+```
+Endpoint   /api/v1/uploads
+```
+> Important Note: append object to payload eg: `{ url: id + '/profile/', name: 'index'}`
+
+> user id `id`: `integer`
+
+> type `profile`: `string`
+
+> file `name`: `string`
+
+> example object 
+`{ 
+	url: 1003 + '/profile/', 
+	name: 'index'
+}`
 ```
