@@ -1,5 +1,15 @@
 # Innohub Rest API
 
+### Table of Contents
+**[Authorization](#authorization)**<br>
+**[Routes](#routes)**<br>
+  **[Authentication](#authentication)**<br>
+**[File Preprocesser](#file-preprocesser)**<br>
+**[Uploads](#uploads)**<br>
+**[Integrations](#integrations)**<br>
+
+
+
 ## Authorization
 
 ### Usage
