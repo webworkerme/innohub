@@ -673,7 +673,7 @@ Sharing button Pinterest
 
 #### CSS for social buttons
 
-> Change it to fit the sizes you want
+> Customise css to fit your needs
 
 ```
 .resp-sharing-button__link,
