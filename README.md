@@ -580,10 +580,13 @@ Response
 
 #### First Option
 Copy the below snippet and insert it right before the closing body tag on every page you want
+
 ``<script src=“//platform-api.sharethis.com/js/sharethis.js#property=5ca785209b272f00119abe29&product=inline-share-buttons”></script>``
 
 Copy and paste the code below wherever you'd like the buttons to appear
+
 `` <div class="sharethis-inline-share-buttons"></div> ``
+
 You can add it to a loop and it will create a new instance every time it iterates, automatically binding it to the corresponding elements. auto count will work defaultly for each listing.
 
 #### Second Option
