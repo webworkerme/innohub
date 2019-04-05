@@ -576,6 +576,16 @@ Response
 > Note: Social share can only be effectively implemented in the frontend
 
 > Disclaimer: The below code may work effectively or not depending on the stack (framework)
-> you use to implement your frontend
+> you use to code your frontend
+
+#### First Option
+Copy the below snippet and insert it right before the closing body tag on every page you want
+``<script src=“//platform-api.sharethis.com/js/sharethis.js#property=5ca785209b272f00119abe29&product=inline-share-buttons”></script>``
+
+Copy and paste the code below wherever you'd like the buttons to appear
+`` <div class="sharethis-inline-share-buttons"></div> ``
+You can add it to a loop and it will create a new instance every time it iterates, automatically binding it to the corresponding elements. auto count will work defaultly for each listing.
+
+#### Second Option
 
 
