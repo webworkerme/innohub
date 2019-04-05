@@ -575,9 +575,6 @@ Response
 ### Social Share
 > Note: Social share can only be effectively implemented in the frontend
 
-> Disclaimer: The below code may work effectively or not depending on the stack (framework)
-> you use to code your frontend
-
 #### Frontend integration
 
 Copy and paste the code below wherever you'd like the buttons to appear, best practice will be to create a component for it.
