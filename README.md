@@ -880,3 +880,252 @@ background-color: #FF6600
 
 ### Social Share Rest Calls
 
+
+#### Get total social shares for a job posting
+
+`GET Request`
+
+```
+Endpoint   /api/v1/shares/count
+```
+Response
+
+```
+{
+    "status": "success",
+    "response": {
+        "id": "1",
+        "jobid": "1",
+        "facebook": "18",
+        "twitter": null,
+        "linkedin": null,
+        "tumblr": null,
+        "pinterest": null,
+        "mail": null,
+        "updated": "2019-04-05 19:25:15.000000",
+        "created": "2019-04-05 19:25:15.000000"
+    },
+    "code": "200"
+}
+```
+
+
+#### Update job posting social shares for facebook
+
+`PUT Request`
+
+```
+Endpoint   /api/v1/shares/update/facebook
+```
+
+```
+Payload
+{
+	"jobid": "1"
+}
+```
+
+Success Response
+
+```
+{
+    "status": "success",
+    "response": {
+        "facebookCount": "19"
+    },
+    "code": "200"
+}
+```
+
+Invalid Payload
+
+```
+{
+    "status": "error",
+    "message": "Bad Request",
+    "code": "401"
+}
+```
+
+#### Update job posting social shares for twitter
+
+`PUT Request`
+
+```
+Endpoint   /api/v1/shares/update/twitter
+```
+
+```
+Payload
+{
+	"jobid": "1"
+}
+```
+
+Success Response
+
+```
+{
+    "status": "success",
+    "response": {
+        "twitterCount": "1"
+    },
+    "code": "200"
+}
+```
+
+Invalid Payload
+
+```
+{
+    "status": "error",
+    "message": "Bad Request",
+    "code": "401"
+}
+```
+
+
+#### Update job posting social shares for linkedin
+
+`PUT Request`
+
+```
+Endpoint   /api/v1/shares/update/linkedin
+```
+
+```
+Payload
+{
+	"jobid": "1"
+}
+```
+
+Success Response
+
+```
+{
+    "status": "success",
+    "response": {
+        "linkedinCount": "1"
+    },
+    "code": "200"
+}
+```
+
+Invalid Payload
+
+```
+{
+    "status": "error",
+    "message": "Bad Request",
+    "code": "401"
+}
+```
+#### Update job posting social shares for tumblr
+
+`PUT Request`
+
+```
+Endpoint   /api/v1/shares/update/tumblr
+```
+
+```
+Payload
+{
+	"jobid": "1"
+}
+```
+
+Success Response
+
+```
+{
+    "status": "success",
+    "response": {
+        "tumblrCount": "1"
+    },
+    "code": "200"
+}
+```
+
+Invalid Payload
+
+```
+{
+    "status": "error",
+    "message": "Bad Request",
+    "code": "401"
+}
+```
+#### Update job posting social shares for pinterest
+
+`PUT Request`
+
+```
+Endpoint   /api/v1/shares/update/pinterest
+```
+
+```
+Payload
+{
+	"jobid": "1"
+}
+```
+
+Success Response
+
+```
+{
+    "status": "success",
+    "response": {
+        "pinterestCount": "1"
+    },
+    "code": "200"
+}
+```
+
+Invalid Payload
+
+```
+{
+    "status": "error",
+    "message": "Bad Request",
+    "code": "401"
+}
+```
+#### Update job posting social shares for mail
+
+`PUT Request`
+
+```
+Endpoint   /api/v1/shares/update/mail
+```
+
+```
+Payload
+{
+	"jobid": "1"
+}
+```
+
+Success Response
+
+```
+{
+    "status": "success",
+    "response": {
+        "mailCount": "1"
+    },
+    "code": "200"
+}
+```
+
+Invalid Payload
+
+```
+{
+    "status": "error",
+    "message": "Bad Request",
+    "code": "401"
+}
+```
