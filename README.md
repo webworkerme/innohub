@@ -365,7 +365,7 @@ Company Exists
 ```
 {
     "status": "error",
-    "message": "Corporate profile exists",
+    "message": "Company profile exists",
     "code": "401"
 }
 ```
@@ -377,5 +377,196 @@ Invalid Payload
     "status": "error",
     "message": "Bad Request",
     "code": "401"
+}
+```
+
+#### New Job posting
+
+`POST Request`
+
+```
+Endpoint   /api/v1/jobs/create/job
+```
+
+```
+Payload
+{
+	"title": "Nuxtjs Developer",
+	"description": "Collaborate with our team in every stage of a product's lifecycle",
+	"location": "San Jose",
+	"closeDate": "2019-04-04 13:38:42.000000",
+	"company": "1000"
+}
+```
+
+Success Response
+
+```
+{
+    "status": "success",
+    "response": {
+        "title": "Nuxtjs Developer",
+        "description": "Collaborate with our team in every stage of a product's lifecycle",
+        "location": "San Jose",
+        "closeDate": "2019-04-04 13:38:42.000000",
+        "company": "1000",
+        "id": "1",
+        "updated": "2019-04-05 18:01:43",
+        "created": "2019-04-05 18:01:43"
+    },
+    "code": "200"
+}
+```
+
+Job Posting Exists
+
+```
+{
+    "status": "error",
+    "message": "Job posting exists",
+    "code": "401"
+}
+```
+
+Invalid Payload
+
+```
+{
+    "status": "error",
+    "message": "Bad Request",
+    "code": "401"
+}
+```
+
+#### Get all job postings
+
+`GET Request`
+
+```
+Endpoint   /api/v1/jobs/query/all
+```
+Response
+
+```
+{
+    "status": "success",
+    "response": [
+        {
+            "id": "1000",
+            "company": "1000",
+            "title": "Nuxtjs Developer",
+            "description": "Collaborate with our team in every stage of a product's lifecycle",
+            "closeDate": "2019-04-04 13:38:42.000000",
+            "location": "Prescott Arizona",
+            "created": "2019-04-05 17:21:04.000000",
+            "updated": "2019-04-05 17:21:04.000000",
+            "user": "1",
+            "name": "Menzvic Limited",
+            "logo": "default"
+        },
+        {
+            "id": "1000",
+            "company": "1000",
+            "title": "Reactjs Developer",
+            "description": "Collaborate with our team in every stage of a product's lifecycle",
+            "closeDate": "2019-04-04 13:38:42.000000",
+            "location": "Prescott Arizona",
+            "created": "2019-04-05 17:21:04.000000",
+            "updated": "2019-04-05 17:21:04.000000",
+            "user": "1",
+            "name": "Menzvic Limited",
+            "logo": "default"
+        },
+        {
+            "id": "1000",
+            "company": "1000",
+            "title": "Business Manager",
+            "description": "Collaborate with our team in every stage of a product's lifecycle",
+            "closeDate": "2019-04-04 13:38:42.000000",
+            "location": "Prescott Arizona",
+            "created": "2019-04-05 17:21:04.000000",
+            "updated": "2019-04-05 17:21:04.000000",
+            "user": "1",
+            "name": "Menzvic Limited",
+            "logo": "default"
+        }
+    ],
+    "code": "200"
+}
+```
+
+#### Get all company postings
+
+`GET Request`
+
+```
+Endpoint   /api/v1/jobs/query/company/[{company-id}]
+```
+Response
+
+```
+{
+    "status": "success",
+    "response": [
+        {
+            "id": "1001",
+            "company": "1001",
+            "title": "Project Manager",
+            "description": "Collaborate with our team in every stage of a product's lifecycle",
+            "closeDate": "2019-04-05 18:38:42.000000",
+            "location": "London, Greater London",
+            "created": "2019-04-05 18:10:25.000000",
+            "updated": "2019-04-05 18:10:25.000000",
+            "user": "2",
+            "name": "Kwasivok Developer Services",
+            "logo": "default"
+        },
+        {
+            "id": "1001",
+            "company": "1001",
+            "title": "UI/UX Designer",
+            "description": "Collaborate with our team in every stage of a product's lifecycle",
+            "closeDate": "2019-04-05 18:38:42.000000",
+            "location": "London, Greater London",
+            "created": "2019-04-05 18:10:25.000000",
+            "updated": "2019-04-05 18:10:25.000000",
+            "user": "2",
+            "name": "Kwasivok Developer Services",
+            "logo": "default"
+        },
+        {
+            "id": "1001",
+            "company": "1001",
+            "title": "Growth Hacker",
+            "description": "Collaborate with our team in every stage of a product's lifecycle",
+            "closeDate": "2019-04-05 18:38:42.000000",
+            "location": "London, Greater London",
+            "created": "2019-04-05 18:10:25.000000",
+            "updated": "2019-04-05 18:10:25.000000",
+            "user": "2",
+            "name": "Kwasivok Developer Services",
+            "logo": "default"
+        }
+    ],
+    "code": "200"
+}
+```
+
+#### Get open positions for a company
+
+`GET Request`
+
+```
+Endpoint   /api/v1/jobs/query/positions/[{company-id}]
+```
+Response
+
+```
+{
+    "status": "success",
+    "response": {
+        "positions": 3
+    },
+    "code": "200"
 }
 ```
