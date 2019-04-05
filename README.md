@@ -886,7 +886,7 @@ background-color: #FF6600
 `GET Request`
 
 ```
-Endpoint   /api/v1/shares/count
+Endpoint   /api/v1/shares/count/[{jobid}]
 ```
 Response
 
