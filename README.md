@@ -8,6 +8,7 @@
 **[Uploads](#uploads)**<br>
 **[Integrations](#integrations)**<br>
 **[Jobs](#jobs)**<br>
+**[Social Share](#social-share)**<br>
 
 
 
@@ -570,3 +571,11 @@ Response
     "code": "200"
 }
 ```
+
+### Social Share
+> Note: Social share can only be effectively implemented in the frontend
+
+> Disclaimer: The below code may work effectively or not depending on the stack (framework)
+> you use to implement your frontend
+
+
