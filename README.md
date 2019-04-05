@@ -8,7 +8,8 @@
 **[Uploads](#uploads)**<br>
 **[Integrations](#integrations)**<br>
 **[Jobs](#jobs)**<br>
-**[Social Share](#social-share)**<br>
+**[Social Share Frontend Integration](#social-share-frontend-integration)**<br>
+**[Social Share Rest Calls](#social-share-rest-calls)**<br>
 
 
 
@@ -572,7 +573,8 @@ Response
 }
 ```
 
-### Social Share
+### Social Share Frontend Integration
+
 > Note: Social share can only be effectively implemented in the frontend
 
 #### Frontend integration
@@ -875,4 +877,6 @@ background-color: #FF6600
   border-color: #046293;
 }
 ```
+
+### Social Share Rest Calls
 
